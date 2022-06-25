@@ -1,0 +1,20 @@
+// if (typeof (x) === 'string' || 'boolean' || 'number') {
+//   console.log(typeof (x));
+// } else {
+//   console.log('Тип x не определен');
+// }
+let x = true;
+let type = typeof (x);
+switch (type) {
+  case 'string':
+    console.log('X - строка');
+    break;
+  case 'boolean':
+    console.log('X - логическое');
+    break;
+  case 'number':
+    console.log('X - число');
+    break;
+  default:
+    console.log('Тип x не определён')
+}
