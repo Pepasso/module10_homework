@@ -1,1 +1,0 @@
-console.log(equalElementsInArray([1, 2, 3]), 'All elements are different');

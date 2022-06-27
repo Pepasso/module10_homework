@@ -1,3 +1,4 @@
+// как и все prompt работает только в среде Браузера
 var example = +prompt('Введите значение', '');
 var result = example % 2;
 var test = isNaN(example);

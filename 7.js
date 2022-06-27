@@ -1,18 +1,18 @@
-function Even(K) {
-  return K % 2 == 0;
+let arr = [33, 107, 0, 2, NaN, true, 605, "28", "test", null, 0, 10, "try"];
+let zero = 0;
+let even = 0;
+let odd = 0;
+for (let i = 0; i < arr.length; i++) {
+  if (arr[i] === 0) {
+    zero++;
+  } else if (typeof (arr[i]) !== "number" || typeof (arr[i]) === "NaN") {
+    console.log(`${arr[i]} -  это не число`);
+  } else if (arr[i] % 2 === 0) {
+    even++;
+  } else {
+    odd++;
+  }
 }
-
-function Odd(L) {
-  return L % 2 == 1;
-}
-
-var arr = [1, 2, 3, 4, 5, 6, 7, 8, 0, "as"];
-for (var i = 0, k = 0, l = 0; i < arr.length; i++) {
-  if (Even(arr[i])) {
-    k++;
-  } else if (Odd(arr[i])) {
-    l++;
-  } else if
-}
-
-console.log(k + ', ' + l);
+console.log(`${zero} - нулей`);
+console.log(`${even} - чётных чисел`);
+console.log(`${odd} - не чётных чисел`);

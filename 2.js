@@ -1,8 +1,3 @@
-// if (typeof (x) === 'string' || 'boolean' || 'number') {
-//   console.log(typeof (x));
-// } else {
-//   console.log('Тип x не определен');
-// }
 let x = true;
 let type = typeof (x);
 switch (type) {
